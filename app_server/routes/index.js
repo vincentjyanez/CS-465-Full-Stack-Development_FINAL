@@ -1,20 +1,16 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const router = express.Router();
+const travelController = require('../controllers/travel');
 const ctrlMain = require('../controllers/main');
 
 //GET home page. 
 router.get('/', ctrlMain.index) 
 
-router.get('/api/things', (req, res) => {
-    const things = [
-        { id: 1, name: 'Thing One', isActive: true },
-        { id: 2, name: 'Thing Two', isActive: false },
-        { id: 3, name: 'Thing Three', isActive: true }
-    ];
+// GET travel page 
+router.get('/travel', travelController.travel);
 
-    const activeThings = things.filter(thing => thing.isActive);
-    res.json(activeThings);
-});
+// API route to get trips in JSON format
+router.get('/api/trips', travelController.getTrips);
 
 module.exports = router;
 
