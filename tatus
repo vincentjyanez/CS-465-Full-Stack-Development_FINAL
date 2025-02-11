@@ -1,0 +1,17 @@
+[33mcommit df828eec16ba8adf983ed2e2dc4530d4d5cec07d[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/module2[m[33m, [m[1;32mmodule2[m[33m)[m
+Author: Vincent Yanez <vincent.yanez@snhu.edu>
+Date:   Fri Jan 17 18:20:59 2025 -0500
+
+    Restore all files and prepare for final commit
+
+[33mcommit 309948c00ea64df7211426d55b654cdfe2336857[m
+Author: Vincent Yanez <vincent.yanez@snhu.edu>
+Date:   Thu Jan 9 14:48:17 2025 -0500
+
+    Add travel.html file
+
+[33mcommit 5763ad83e3dbc44eefe9378ed96ddc0dc4a87117[m[33m ([m[1;31morigin/module1[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: vincentjyanez <142512159+vincentjyanez@users.noreply.github.com>
+Date:   Tue Jan 7 19:32:43 2025 -0500
+
+    Initial commit
