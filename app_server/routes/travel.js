@@ -10,7 +10,7 @@ router.get('/', (req, res) => {
 });
 
 // GET all trips from the database
-router.get('/', async (req, res) => {
+router.get('/trips', async (req, res) => {
     try {
         const trips = await Trip.find(); // Fetch all trips from the DB
         res.json(trips);  // Return the trips as JSON
@@ -21,12 +21,12 @@ router.get('/', async (req, res) => {
 
 // POST a new trip to the database
 router.post('/api/trips', async (req, res) => {
-    const { code, title, length, start, resort, perPerson, image, description } = req.body;
+    const { code, name, length, start, resort, perPerson, image, description } = req.body;
 
     // Create a new trip with the provided data
     const newTrip = new Trip({
         code,
-        title,
+        name,
         length,
         start,
         resort,

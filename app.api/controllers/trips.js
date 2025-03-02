@@ -1,7 +1,5 @@
 const mongoose = require('mongoose');
 const Trip = require('../models/travlr'); // Import the correct model
-const model = mongoose.model('trips');
-
 
 // GET /trips - lists all trips
 const tripsList = async (req, res) => {
@@ -14,15 +12,12 @@ const tripsList = async (req, res) => {
     } catch (err) {
         return res.status(500).json({ error: err.message });
     }
+}; 
 
-
-// GET /trips/:tripCode - find trip by code
+// GET /trips/:code - Find a trip by code
 const tripsFindByCode = async (req, res) => {
-    const q = await model
-        .find({'code' : req.params.tripCode }) // Return single record
-        .exec();
-
-        const trip = await Trip.findOne({ code: req.params.tripCode }); // Use findOne for a single record
+    try {
+        const trip = await Trip.findOne({ code: req.params.code });
         if (!trip) {
             return res.status(404).json({ message: "Trip not found" });
         }
@@ -32,7 +27,20 @@ const tripsFindByCode = async (req, res) => {
     }
 };
 
+// POST /trips - Add a new trip
+const tripsAddTrip = async (req, res) => {
+    try {
+        const trip = new Trip(req.body);
+        await trip.save();
+        return res.status(201).json(trip);
+    } catch (error) {
+        return res.status(400).json({ error: error.message });
+    }
+};
+
+// Export the functions
 module.exports = {
     tripsList,
-    tripsFindByCode
+    tripsFindByCode,
+    tripsAddTrip
 };

@@ -1,4 +1,4 @@
-const Trip = require('../models/travlr');
+const Trip = require('../models/trip'); 
 
 // GET travel view with dynamic data from MongoDB
 const travel = async (req, res) => {
