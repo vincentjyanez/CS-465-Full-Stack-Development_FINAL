@@ -1,0 +1,15 @@
+.row {
+    display: flex;
+    flex-wrap: wrap; /* Makes sure cards wrap on smaller screens */
+    justify-content: space-between; /* Space between cards */
+  }
+  
+  .card-deck {
+    margin-bottom: 20px; /* Adds spacing between cards */
+  }
+
+  .card {
+    height: 100%; 
+  }
+  
+  
