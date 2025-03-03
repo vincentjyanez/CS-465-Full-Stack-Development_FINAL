@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# CS-465-Full-Stack-Development
-=======
 # CS-465-Full-Stack-Development_FINAL
 Architecture
 In this project, I used Express for the backend, HTML for the structure, JavaScript for interactivity, and MongoDB as the database.
@@ -28,9 +25,3 @@ Security ensures only authorized users can access or change data. Testing checks
 Reflection
 This course has helped me develop essential skills in full-stack development, which are directly applicable to my professional goals. I learned to build both frontend and backend applications using technologies like Express, MongoDB, and JavaScript, improving my ability to create dynamic websites. The hands-on experience with APIs, databases, and security practices has made me more marketable as a developer. Although I wasn't able to fully implement the security practices code, I gained a deeper understanding of how security works in full-stack applications. These skills enhance my ability to contribute to projects from start to finish, making me a more well-rounded candidate in the tech industry.
 
-
-
-
-
-
->>>>>>> 91f82d4bb28f0ad67d424bccbba00d5be15af011
